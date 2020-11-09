@@ -4,13 +4,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace EmployeeApplication1
+namespace EmployeeApplication
 {
+   
     public class Employee
     {
+        //Class Vairables
         private int empID;
         private string FN, LN, Pos;
 
+        //Default constructor
         public Employee()
         {
             this.empID = 0;
@@ -19,6 +22,7 @@ namespace EmployeeApplication1
             this.Pos = "";
         }
 
+        //Employee constructor with parameters
         public Employee(int id, string firstname, string lastname, string position)
         {
             this.empID = id;
@@ -27,6 +31,7 @@ namespace EmployeeApplication1
             this.Pos = position;
         }
 
+        //get and set Employee ID
         public int EID
         {
             get
@@ -39,6 +44,7 @@ namespace EmployeeApplication1
             }
         }
 
+        //get and set employee FirstName
         public string FirstName
         {
             get
@@ -51,6 +57,7 @@ namespace EmployeeApplication1
             }
         }
 
+        //get and set employee LastName
         public string LastName
         {
             get
@@ -62,6 +69,8 @@ namespace EmployeeApplication1
                 this.LN = value;
             }
         }
+
+        //get and set employee Position
         public string POS
         {
             get
